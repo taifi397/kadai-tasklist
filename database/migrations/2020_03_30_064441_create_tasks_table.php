@@ -17,10 +17,10 @@ class CreateTasksTable extends Migration
             $table->increments('id');
             $table->string('content');    // content カラム追加
             $table->timestamps();
-            $table->integer('user_id')->unsigned()->index();
             
-            // 外部キー制約
-            $table->foreign('user_id')->references('id')->on('users');
+
+            
+            
            
         });
     }
